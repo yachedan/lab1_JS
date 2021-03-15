@@ -1,0 +1,131 @@
+body{
+    font-family: 'Roboto';
+    font-weight: 400;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: #ddd;
+}
+.main{
+
+align-items: center;
+width: 250px;
+min-height: 430px;
+background-color: #ddd;
+box-shadow: 
+    12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -8px -8px 12px 0 rgb(236, 236, 236);
+border-radius: 20px;
+}
+.header{
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+#date{
+    position: relative;
+    top: 70px;
+    color: #5E5E5E;
+
+}
+.content{
+    margin-top: 10px;
+}
+#list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    word-break: break-all;
+}
+.item{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    width: 220px;
+    align-items: baseline;
+}
+.item i.co:hover{
+    cursor: pointer;
+}
+.item i.de:hover{
+    cursor: pointer;
+    color:#af0000;
+}
+.item p.text{
+    margin: 0;
+    padding-left: 10px;
+    height: 20px;
+    min-width: 190px;
+    
+} 
+.lineThrough{
+    text-decoration: line-through;
+    color : rgb(91, 91, 91);
+}
+.clear{
+    width : 20px;
+    height: 20px;
+    position: relative;
+    left: 85%;
+    top:20px;
+}
+.clear i{
+    font-size: 20px;
+    color: #5E5E5E;
+    transition: ease-in-out 0.2s;
+}
+.clear i:hover{
+    cursor: pointer;
+    transform: rotate(45deg); 
+    transition: ease-in-out 0.2s;
+}
+.add-to-do{
+    position: absolute;
+    top: 375px;
+    min-height: 80px;
+    border-top: 1px solid rgba(0, 0,0,0.25);
+    width: 250px;
+}
+.add-to-do i{
+    top: 5px;
+    border-radius: 50px;
+    font-size: 50px;
+    position: relative;
+    left: 32%;
+    color: #1a1a1a;
+}
+.add-to-do input{
+    background-color: #ddd;
+    min-height: 35px;
+    border: none;
+    opacity: 0;
+    position: relative;
+    left: 20%;
+    width: 5px;
+    font-size: 16px;
+    outline-color: rgba(0, 0, 0, 0.3);
+}
+.add-to-do input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-style: italic;
+    position: relative;
+    left: 5px;
+}
+.add-to-do input::-moz-placeholder { /* Firefox 19+ */
+    font-size: 16px;
+    font-family: 'Roboto';
+    left: -20px;
+}
+.add-to-do input:-ms-input-placeholder { /* IE 10+ */
+    font-size: 16px;
+    font-family: 'Roboto';
+    left: -20px;
+}
+.add-to-do input:-moz-placeholder { /* Firefox 18- */
+    font-size: 16px;
+    font-family: 'Roboto';
+    left: -20px;
+}
